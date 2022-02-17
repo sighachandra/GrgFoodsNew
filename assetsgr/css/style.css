@@ -1,0 +1,76 @@
+:root {
+	--headerText: #868378;
+    --headerTextHover: #fad355;
+    --appleGreen: #72b643;
+    }
+
+    /*header styling*/
+
+.logo_style{
+	height: 4em;
+	width: auto;
+}
+
+
+ /*navbar dropdown*/
+
+ .dropdown {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            width: 100px;
+            
+        }
+
+        .dropdown li {
+            position: relative;
+        }
+
+        .dropdown li a {
+            color: var(--headerText);
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+        }
+
+        .dropdown li ul {
+            position: absolute;
+            top: 100%;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: none;
+            line-height: normal;
+            background-color: #333;
+        }
+
+        .dropdown li ul li a {
+            text-align: left;
+            color: #cccccc;
+            font-size: 14px;
+            padding: 10px;
+            display: block;
+            white-space: nowrap;
+        }
+
+        .dropdown li ul li a:hover {
+            background-color: #0abf53;
+            color: #ffffff;
+        }
+
+        .dropdown li ul li ul {
+            left: 100%;
+            top: 0;
+        }
+
+        ul li:hover>a {
+            background-color: #0abf53;
+            color: #ffffff !important;
+        }
+
+        ul li:hover>ul {
+            display: block;
+        }
+ /*end of the dropdown*/
+    /*end of header styling*/
