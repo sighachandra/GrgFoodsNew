@@ -2,6 +2,7 @@
 	--headerText: #868378;
     --headerTextHover: #fad355;
     --appleGreen: #72b643;
+    --btnBackground: #f9f9f9;
     }
 
     /*header styling*/
@@ -74,3 +75,131 @@
         }
  /*end of the dropdown*/
     /*end of header styling*/
+
+
+
+    /*Begining of the content part*/
+
+    /*Left side dropdown*/
+
+    /*.dropbtn_l {
+  background-color: var(--btnBackground);
+  color: var(--headerText);
+  padding: 16px;
+  font-size: 16px;
+  border: 1px solid var(--headerText);
+  cursor: pointer;
+  text-align: start;
+}
+
+.dropbtn_l:hover, .dropbtn_l:focus {
+  background-color: #2980B9;
+}
+
+.dropdown_l {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content_l {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content_l a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown_l a:hover {background-color: #ddd;}
+.show_l {display: block;}*/
+
+.sideBar_padding{
+    padding: 25px 30px 30px 30px;
+}
+      /*End of the dropdown*/
+ .left_content_div{
+    
+    width: 390px;
+    margin-right: 22px;
+    padding: 0;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #e5e7f2;
+ }
+ .right_content_div{
+    background: #fff;
+    margin-bottom: 10px;
+    border: 1px solid #e5e7f2;
+ }
+ .product_style{
+    padding: 18px 30px 18px 30px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e5e7f2;
+ }
+ .product_style p {
+    text-align: left;
+    font-size: 15px;
+    font-weight: 600;
+    color: #566985;
+ }
+ .select_style{
+    background-color: transparent;
+    font-weight: normal;
+     color: var(--headerText);
+     font-size: 16px;
+
+
+ }
+ .select_style:focus{
+    outline: none;
+    
+ }
+ .form_styling{
+     border: 1px solid #e5e7f2;
+     font-weight: normal;
+     color: var(--headerText);
+     font-size: 16px;
+     border-radius: 6px;
+     padding: 12px;
+      margin-bottom: 20px;
+
+ }
+ .selector_i{
+    padding-top: 2px;
+    padding-right: 12px;
+ }
+ .right_h2{
+    text-align: left;
+    font-weight: 500;
+    font-size: 16px;
+    float: left;
+    color: #566985;
+    position: relative;
+    margin: 0;
+ }
+ .right_h2_div{
+    padding: 14px 20px 14px 20px;
+ }
+ .image_content{
+    padding-left: 8px;
+    padding-right: 8px;
+    box-shadow: rgb(0 0 0 / 10%) 0px 5px 5px;
+
+ }
+
+    /*End of the content part*/
+
+
+
+
+
+
