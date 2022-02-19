@@ -121,6 +121,10 @@
 .dropdown_l a:hover {background-color: #ddd;}
 .show_l {display: block;}*/
 
+.main_bg{
+    background-color: #f6f6f6;
+}
+
 .sideBar_padding{
     padding: 25px 30px 30px 30px;
 }
@@ -138,6 +142,7 @@
     background: #fff;
     margin-bottom: 10px;
     border: 1px solid #e5e7f2;
+    width: 760px;
  }
  .product_style{
     padding: 18px 30px 18px 30px;
@@ -189,12 +194,62 @@
  .right_h2_div{
     padding: 14px 20px 14px 20px;
  }
+   /*image part styling*/
  .image_content{
-    padding-left: 8px;
-    padding-right: 8px;
+   
     box-shadow: rgb(0 0 0 / 10%) 0px 5px 5px;
+    border-top: 1px solid #e5e7f275;
 
  }
+ .col_md1_styleImage{
+    width: 31.5%;
+    margin-right: 8px;
+ }
+ .col_md2_styleImage{
+    width: 31.5%;
+    margin-right: 8px;
+    margin-left: 8px;
+ }
+ .col_md3_styleImage{
+    width: 31.5%;
+    margin-left: 8px;
+ }
+ .nameboxpdt{
+    background: var(--appleGreen);
+    height: 112px;
+    
+    width: 100%;
+    font-size: 13px;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+ }
+ .brandimg:active{
+    background: rgb(245 141 43);
+    opacity: .5;
+    border: 1px solid #f77606!important;
+    box-shadow: 0 0 10px #f77606;
+ }
+ .brandimg {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+   }
+   .w-99{
+    width: 99%;
+   }
+   .branding_p{
+    margin-bottom: 20px;
+    margin-right: 0;
+    margin-left: 0;
+   }
+   /*end of the section*/
+
+
 
     /*End of the content part*/
 
