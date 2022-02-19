@@ -12,6 +12,13 @@
 	width: auto;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+  background-color: white;
+}
 
  /*navbar dropdown*/
 
@@ -248,10 +255,35 @@
     margin-left: 0;
    }
    /*end of the section*/
-
+   .image_spacing_right{
+    margin-bottom: 10px;
+   }
 
 
     /*End of the content part*/
+
+
+
+
+@media (max-width: 768px){
+    .col_md1_styleImage{
+        width: 100%;
+        margin-right: 0px;
+    }
+    .col_md2_styleImage{
+        width: 100%;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .col_md3_styleImage{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .right_content_div{
+        width: 336px;
+        margin-top: 10px;
+    }
+}
 
 
 
