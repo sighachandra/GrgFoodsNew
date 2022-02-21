@@ -3,6 +3,8 @@
     --headerTextHover: #fad355;
     --appleGreen: #72b643;
     --btnBackground: #f9f9f9;
+    --hoveringYellow: #fad34a;
+    --modalBackground: #25634d;
     }
 
     /*header styling*/
@@ -19,6 +21,13 @@
   left: 0;
   background-color: white;
 }
+.header_spacing{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.mainheadernavbar{
+    display: block;
+}
 
  /*navbar dropdown*/
 
@@ -27,6 +36,7 @@
             padding: 0;
             list-style: none;
             width: 100px;
+            color: white !important;
             
         }
 
@@ -40,10 +50,81 @@
             text-decoration: none;
             display: block;
             padding: 10px;
+
+        }
+        .dropdown li a:hover{
+            background-color: white !important;
+            color: var(--hoveringYellow)!important;
         }
 
         .dropdown li ul {
             position: absolute;
+            top: 100%;
+            margin: 0;
+            padding: 6px 12px 6px 12px;
+            list-style: none;
+            display: none;
+            line-height: normal;
+            background-color: var(--appleGreen);
+            border-radius: 6px;
+        }
+
+
+        .dropdown li ul li a {
+            text-align: left;
+            color: white;
+            font-size: 17px;
+            padding: 10px;
+            display: block;
+            white-space: nowrap;
+        }
+
+        .dropdown li ul li a:hover {
+            background-color: transparent !important;
+            color: var(--hoveringYellow) !important;
+        }
+
+        .dropdown li ul li ul {
+            left: 100%;
+            top: 0;
+        }
+
+        ul li:hover>a {
+            
+            color: var(--hoveringYellow) !important;
+        }
+
+        ul li:hover>ul {
+            display: block;
+        }
+        
+ /*end of the dropdown*/
+
+ /*navbar dropdown-modal*/
+
+ .dropdown_d {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            width: 100%;
+            
+        }
+
+        .dropdown_d li {
+            position: relative;
+        }
+
+        .dropdown_d li a {
+            color: white;
+            text-align: start;
+            text-decoration: none;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }
+
+        .dropdown_d li ul {
+           /* position: absolute;*/
             top: 100%;
             margin: 0;
             padding: 0;
@@ -51,23 +132,25 @@
             display: none;
             line-height: normal;
             background-color: #333;
+            z-index: 1;
         }
 
-        .dropdown li ul li a {
+        .dropdown_d li ul li a {
             text-align: left;
             color: #cccccc;
             font-size: 14px;
-            padding: 10px;
+            padding: 0px 10px 0px 10px;
             display: block;
             white-space: nowrap;
+            font-size: 22px;
         }
 
-        .dropdown li ul li a:hover {
+        .dropdown_d li ul li a:hover {
             background-color: #0abf53;
             color: #ffffff;
         }
 
-        .dropdown li ul li ul {
+        .dropdown_d li ul li ul {
             left: 100%;
             top: 0;
         }
@@ -138,7 +221,7 @@
       /*End of the dropdown*/
  .left_content_div{
     
-    width: 390px;
+    /*width: 390px;*/
     margin-right: 22px;
     padding: 0;
     background: #fff;
@@ -262,8 +345,50 @@
 
     /*End of the content part*/
 
+    /*Begining of the footer styling*/
+  .footer_p{
+    color: var(--headerText);
+    font-size: 20px;
+  }
+  .followus_icon{
+    background-color: var(--hoveringYellow);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+
+    /*end of the footer*/
 
 
+    /*modal styling*/
+
+   .modal_content_bg{
+    background-color: var(--modalBackground);
+   }
+   .modal_body_style{
+    display: flex;
+    flex-direction: column;
+   }
+   .btn_style{
+    background-color: transparent;
+    border: none;
+    display: none;
+   }
+   .btn_style:focus {
+    outline: none !important;
+   }
+   .bar_ss{
+    color: black;
+    font-size: 27px;
+   }
+    /*end of modal styling*/
+
+   
+   
 
 @media (max-width: 768px){
     .col_md1_styleImage{
@@ -282,6 +407,16 @@
     .right_content_div{
         width: 336px;
         margin-top: 10px;
+    }
+    .mainheadernavbar{
+        display: none;
+    }
+    .btn_style{
+        display: block;
+    }
+    .right_content_div{
+        margin-right: 0px;
+        margin-left: 0px;
     }
 }
 
