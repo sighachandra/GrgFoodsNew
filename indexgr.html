@@ -309,15 +309,19 @@
 
            <!-- Branding display in mobile view -->
 
-        <div class="dropdown w-100 display_bbm" >
+      <div class="display_bbm">
         
-        <div class="w-100  product_filters  dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" >
+       <div class="w-100  product_filters  dropdown-toggle" href="#" role="button" id="myBtn" data-bs-toggle="dropdown" aria-expanded="false" >
                         <p class="mb-0">FILTERS</p>
                         <!-- <i class="fa fa-angle-down"></i> -->
                     </div>
 
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-               <div class="left_content_div">
+       <!-- The Modal -->
+<div id="myModal" class="modal_filter">
+              <!-- Modal content -->
+  <div class="modal-content_filter">
+    <span class="close_filter">&times;</span>
+    <div class="left_content_div">
                     <div class="w-100  product_style">
                         <p class="mb-0">PRODUCTS</p>
                         <i class="fa fa-angle-down"></i>
@@ -386,8 +390,10 @@
                     </div>
                 </div>
             </div>
-        </ul>
+  </div>
+        
     </div>
+</div>
                <!-- end of the section -->
 
                <!-- Branding in large devices -->
